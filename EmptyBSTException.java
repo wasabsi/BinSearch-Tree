@@ -7,7 +7,6 @@ package edu.cofc.csci230;
  * This exception is thrown when an operation is applied to 
  * an binary search tree that is empty.
  * 
- * @author CSCI 230: Data Structures and Algorithms Fall 2017
  *
  */
 @SuppressWarnings("serial")

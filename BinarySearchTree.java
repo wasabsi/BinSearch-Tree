@@ -4,9 +4,6 @@ package edu.cofc.csci230;
  * 
  * Binary search that does not allow two (or more) binary nodes 
  * in the search tree to have the same element value.
- * 
- * @author CSCI 230: Data Structures and Algorithms Fall 2017
- *
  * @param <AnyType>
  */
 public class BinarySearchTree <AnyType extends Comparable<AnyType>> {
@@ -67,12 +64,7 @@ public class BinarySearchTree <AnyType extends Comparable<AnyType>> {
 	 */
 	public void add( AnyType element ) throws DuplicateElementException {
 		
-		/**
-		 * ------------------------------------
-		 * TODO: You complete the code.
-		 * 
-		 * 
-		 */
+	
 		
 		if(root == null){
 			root = new BinaryNode<AnyType> (element);
@@ -101,13 +93,6 @@ public class BinarySearchTree <AnyType extends Comparable<AnyType>> {
 	 */
 	private void add( BinaryNode<AnyType> node, AnyType element )  throws DuplicateElementException {
 		
-		/**
-		 * ------------------------------------
-		 * TODO: You complete the code.
-		 * 
-		 * Note: Your solution must use recursion
-		 * 
-		 */
 		if(node.getElement().compareTo(element) < 0){
 			if(node.getRight() == null){
 				node.setRight(new BinaryNode<AnyType> (element));
@@ -158,7 +143,6 @@ public class BinarySearchTree <AnyType extends Comparable<AnyType>> {
 	 *  1) The node visited while recursively walking the BST
 	 *  2) The element value that is being searched.
 	 *  
-	 *  Hint: use the compareTo() method
 	 * 
 	 * @param element
 	 * @param node
@@ -166,13 +150,6 @@ public class BinarySearchTree <AnyType extends Comparable<AnyType>> {
 	 */
 	private boolean hasElement( BinaryNode<AnyType> node, AnyType element ) {
 		
-		/**
-		 * ------------------------------------
-		 * TODO: You complete the code.
-		 * 
-		 * Note: Your solution must use recursion
-		 * 
-		 */
 		boolean retval = true;
 		if(node.getElement().compareTo(element) < 0){
 			if(node.getRight() == null){
@@ -231,13 +208,6 @@ public class BinarySearchTree <AnyType extends Comparable<AnyType>> {
 	 */
 	private BinaryNode<AnyType> findMin( BinaryNode<AnyType> node ) {
 		
-		/**
-		 * ------------------------------------
-		 * TODO: You complete the code.
-		 * 
-		 * Note: Your solution must use recursion
-		 * 
-		 */
 		BinaryNode<AnyType> retval = null;
 		if(node.getLeft() == null){
 			retval = node;
@@ -282,13 +252,7 @@ public class BinarySearchTree <AnyType extends Comparable<AnyType>> {
 	 */
 	private BinaryNode<AnyType> findMax( BinaryNode<AnyType> node ) {
 		
-		/**
-		 * ------------------------------------
-		 * TODO: You complete the code.
-		 * 
-		 * Note: Your solution must use recursion
-		 * 
-		 */
+	
 		BinaryNode<AnyType> retval = null;
 		
 		if(node.getRight() == null){
@@ -312,12 +276,7 @@ public class BinarySearchTree <AnyType extends Comparable<AnyType>> {
 	 */
 	public static void main( String[] args ) {
 		
-		/**
-		 * ------------------------------------
-		 * TODO: You put your test cases here
-		 * 
-		 * 
-		 */
+		
 		try{
 			BinarySearchTree<Integer> biSearch = new BinarySearchTree<Integer>(18);
 			

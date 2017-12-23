@@ -8,8 +8,6 @@ package edu.cofc.csci230;
  * an existing node in the binary search tree has the same 
  * element value.
  * 
- * @author CSCI 230: Data Structures and Algorithms Fall 2017
- *
  */
 @SuppressWarnings("serial")
 public class DuplicateElementException extends Exception {

@@ -3,10 +3,6 @@ package edu.cofc.csci230;
 
 /**
  * Binary node used in binary tree / binary search tree 
- * coding assignment.
- * 
- * @author CSCI 230: Data Structures and Algorithms Fall 2017
- *
  * @param <AnyType>
  */
 public class BinaryNode<AnyType> {
